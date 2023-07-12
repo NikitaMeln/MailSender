@@ -11,8 +11,8 @@ import mail.app.service.XlsxReader;
 @Service
 @PropertySource("classpath:application.properties")
 public class MailConstructorImpl implements MailConstructor {
-    private static final String REPLACE_NAME_INDEX = "[Name]";
-    private static final String REPLACE_DISTRICT_INDEX = "[District]";
+    private static final String REPLACE_NAME_INDEX = "[NAME_MARKER]";
+    private static final String REPLACE_DISTRICT_INDEX = "[OPTIONAL_MARKER]";
     public TxtFileReaderImpl txtFileReader;
     public XlsxReader xlsxReader;
 
