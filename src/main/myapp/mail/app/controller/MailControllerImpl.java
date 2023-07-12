@@ -61,7 +61,7 @@ public class MailControllerImpl implements MailController {
         mailService.sendEmail(mail);
         System.out.print("Sent mail to: " + mail.getLetterRecipientMail() + "\n");
         try {
-            Thread.sleep( 3 * TIME_MULTIPLIER);
+            Thread.sleep( 10 * TIME_MULTIPLIER);
         } catch (InterruptedException e) {
             throw new RuntimeException("Time out error");
         }
